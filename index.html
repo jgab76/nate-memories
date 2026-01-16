@@ -10,19 +10,34 @@
     body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
     header { padding: 28px 18px; border-bottom: 1px solid #eee; }
     main { max-width: var(--max); margin: 0 auto; padding: 22px 18px 48px; }
-    h1 { margin: 0 0 6px; font-size: 28px; }
-    .sub { margin: 0; opacity: 0.75; }
     .card { border: 1px solid #eee; border-radius: 14px; padding: 16px; margin: 14px 0; }
     .fine { font-size: 14px; opacity: 0.75; }
     a { color: inherit; }
+
+    .hero { text-align: center; }
+    .hero img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
+      margin: 0 auto 14px;
+    }
+    .hero h1 { margin: 0; font-size: 28px; }
+    .hero .dates { margin: 6px 0 0; opacity: 0.8; }
+    .hero .sub { margin: 10px 0 0; opacity: 0.75; }
   </style>
 </head>
 
 <body>
   <header>
     <main style="padding:0 18px; max-width: var(--max);">
-      <h1>In Loving Memory of Nate</h1>
-      <p class="sub">Thank you for being here. If you’d like, please sign in and share a memory or a photo.</p>
+      <div class="hero">
+        <img src="nate.jpg" alt="Nathanael Woldeabe Nate Gabrysch" />
+        <h1>Nathanael Woldeabe "Nate" Gabrysch</h1>
+        <p class="dates">5/12/2008 - 1/11/2026</p>
+        <p class="sub">Thank you for being here. If you’d like, please sign in and share a memory or a photo.</p>
+      </div>
     </main>
   </header>
 
@@ -39,7 +54,7 @@
           data-tally-src="https://tally.so/r/aQ4aP2?transparentBackground=1"
           loading="lazy"
           width="100%"
-          height="760"
+          height="820"
           title="Funeral Sign-In and Memories">
         </iframe>
       </div>
@@ -52,11 +67,6 @@
       <p class="fine" style="margin-top:10px;">
         If you upload a photo or write a memory, please only share what you’re comfortable having saved by our family.
       </p>
-    </div>
-
-    <div class="card">
-      <h2 style="margin:0 0 6px;">Nate’s playlist</h2>
-      <p style="margin:0 0 10px;">We’ll add the Spotify playlist link here.</p>
     </div>
 
     <p class="fine">© <span id="y"></span> The Gabrysch Family</p>
