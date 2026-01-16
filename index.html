@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>In Loving Memory of Nate</title>
+  <meta name="description" content="Sign in and share a memory or photo." />
+  <style>
+    :root { --max: 760px; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.5; }
+    header { padding: 28px 18px; border-bottom: 1px solid #eee; }
+    main { max-width: var(--max); margin: 0 auto; padding: 22px 18px 48px; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    .sub { margin: 0; opacity: 0.75; }
+    .card { border: 1px solid #eee; border-radius: 14px; padding: 16px; margin: 14px 0; }
+    .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    a.btn {
+      display: inline-block; padding: 12px 14px; border-radius: 12px; text-decoration: none;
+      border: 1px solid #ddd; font-weight: 600;
+    }
+    a.primary { border-color: #111; background: #111; color: #fff; }
+    .fine { font-size: 14px; opacity: 0.75; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <main style="padding:0 18px; max-width: var(--max);">
+      <h1>In Loving Memory of Nate</h1>
+      <p class="sub">Thank you for being here. If you’d like, please sign in and share a memory or a photo.</p>
+    </main>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2 style="margin:0 0 6px;">Sign in and share</h2>
+      <p style="margin:0 0 10px;">Add your name, a memory, and optionally a photo. This helps our family remember who was here and gather stories we’ll cherish.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://tally.so/r/aQ4aP2" target="_blank" rel="noopener">Open the sign-in form</a>
+      </div>
+      <p class="fine" style="margin-top:10px;">
+        If you upload a photo or write a memory, please only share what you’re comfortable having saved by our family.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 style="margin:0 0 6px;">Nate’s playlist</h2>
+      <p style="margin:0 0 10px;">If you’d like to listen, here’s a link to Nate’s favorite songs.</p>
+      <div class="btns">
+        <a class="btn" href="REPLACE_WITH_SPOTIFY_PLAYLIST_LINK" target="_blank" rel="noopener">Open playlist</a>
+      </div>
+      <p class="fine" style="margin-top:10px;">
+        (We’ll add the Spotify link next.)
+      </p>
+    </div>
+
+    <p class="fine">© <span id="y"></span> The Gabrysch Family</p>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
