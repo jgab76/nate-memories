@@ -13,13 +13,8 @@
     h1 { margin: 0 0 6px; font-size: 28px; }
     .sub { margin: 0; opacity: 0.75; }
     .card { border: 1px solid #eee; border-radius: 14px; padding: 16px; margin: 14px 0; }
-    .btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
-    a.btn {
-      display: inline-block; padding: 12px 14px; border-radius: 12px; text-decoration: none;
-      border: 1px solid #ddd; font-weight: 600;
-    }
-    a.primary { border-color: #111; background: #111; color: #fff; }
     .fine { font-size: 14px; opacity: 0.75; }
+    a { color: inherit; }
   </style>
 </head>
 
@@ -34,10 +29,26 @@
   <main>
     <div class="card">
       <h2 style="margin:0 0 6px;">Sign in and share</h2>
-      <p style="margin:0 0 10px;">Add your name, a memory, and optionally a photo. This helps our family remember who was here and gather stories we’ll cherish.</p>
-      <div class="btns">
-        <a class="btn primary" href="https://tally.so/r/aQ4aP2" target="_blank" rel="noopener">Open the sign-in form</a>
+      <p style="margin:0 0 10px;">
+        Add your name, a memory, and optionally a photo. This helps our family remember who was here
+        and gather stories we’ll cherish.
+      </p>
+
+      <div style="margin-top:12px;">
+        <iframe
+          data-tally-src="https://tally.so/r/aQ4aP2?transparentBackground=1"
+          loading="lazy"
+          width="100%"
+          height="760"
+          title="Funeral Sign-In and Memories">
+        </iframe>
       </div>
+
+      <p class="fine" style="margin-top:10px;">
+        If the form does not load, you can open it directly:
+        <a href="https://tally.so/r/aQ4aP2" target="_blank" rel="noopener">https://tally.so/r/aQ4aP2</a>
+      </p>
+
       <p class="fine" style="margin-top:10px;">
         If you upload a photo or write a memory, please only share what you’re comfortable having saved by our family.
       </p>
@@ -45,25 +56,7 @@
 
     <div class="card">
       <h2 style="margin:0 0 6px;">Nate’s playlist</h2>
-      <p style="margin:0 0 10px;">If you’d like to listen, here’s a link to Nate’s favorite songs.</p>
-<div style="margin-top:12px;">
-  <iframe
-    data-tally-src="https://tally.so/r/aQ4aP2?transparentBackground=1"
-    loading="lazy"
-    width="100%"
-    height="700"
-    title="Funeral Sign-In and Memories">
-  </iframe>
-  <script async src="https://tally.so/widgets/embed.js"></script>
-</div>
-
-<p class="fine" style="margin-top:10px;">
-  If the form does not load, you can open it directly: <a href="https://tally.so/r/aQ4aP2" target="_blank" rel="noopener">https://tally.so/r/aQ4aP2</a>
-</p>
-
-      <p class="fine" style="margin-top:10px;">
-        (We’ll add the Spotify link next.)
-      </p>
+      <p style="margin:0 0 10px;">We’ll add the Spotify playlist link here.</p>
     </div>
 
     <p class="fine">© <span id="y"></span> The Gabrysch Family</p>
@@ -72,5 +65,7 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
+  <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
